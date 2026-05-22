@@ -1,5 +1,5 @@
 /*Set the date displayed in the calendar */
-var today = new Date("May 20, 2026");
+var today = new Date("May 22, 2026");
 
 /* Write calendar to the calendar element */
 document.getElementById("calendar").innerHTML = createCalendar(today);
