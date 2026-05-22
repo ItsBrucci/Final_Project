@@ -1,0 +1,676 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, ol, dl, figure, figcaption, section, aside {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*Style Rules for body and images*/
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+	box-sizing: border-box;
+}
+
+/*Style rules for full width backgrounds */
+.fwd1, .fwd2 {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.fwd1 {
+	background-color: #00A6A6;
+}
+
+.fwd2 {
+	background-color: #F49F0A;
+	padding: 1em;
+}
+
+/* Style rule for header */
+header {
+	display: inline-block;
+	width: 35%;
+	margin: .5em;
+	vertical-align: middle;
+}
+
+header img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Style rule for navagation area */
+nav {
+	width: 55%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	margin-left: .5em;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 1em;
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Style rules for mobile viewport*/
+
+/* Show mobile class, hide tablet-desktop class*/
+.mobile {
+	display: block;
+}
+
+.tabDesk {
+	display: none;
+}
+
+main {
+	margin: 1em 0;
+	overflow-x: hidden;
+	font-family: "Inter", sans-serif;
+}
+
+nav li a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+#about {
+	margin: 1em;
+	padding: 1em;
+}
+
+#mobAmenities {
+	background-color: #00A6A6;
+	color: #fff;
+	border-radius: 8px;
+	margin: 1em;
+	padding: 1em;
+}
+
+#mobileMmbrship, #mmbrship {
+	padding: .25em;
+	margin: 1em;
+	color: #fff;
+}
+
+#mobileBasic, #mobileMid, #mobileHigh {
+	border-radius: 8px;
+	background-color: #fff;
+	color: #000;
+	margin: 2em;
+	padding: 1em;
+}
+
+#mBasicPrice {
+	background-color: #EFCA08;
+}
+
+#mMidPrice {
+	background-color: #F49F0A;
+}
+
+#mHighPrice {
+	background-color: #F08700;
+}
+
+#mBasicPrice, #mMidPrice, #mHighPrice {
+	width: 25%;
+	margin: 0 auto;
+	padding: .5%;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.join {
+	width: 25%;
+	padding: .25%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	border-radius: 8px;
+	background-color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
+
+.join a{
+	text-decoration: none;
+	color: #000000;
+}
+
+h1, h2, h3{
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+}
+
+#contact h4 {
+	text-align: center;
+}
+
+#contact a{
+	text-decoration: none;
+	color: #F08700;
+}
+
+.map {
+	width: 98%;
+	height: 360px;
+}
+
+#about, #tdAbout {
+	color: #FFFFFF;
+}
+
+.round {
+	border-radius: 5px;
+}
+
+#formMain {
+	margin: 2em;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+form {
+	background-color: #00A6A6;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	width: 80%;
+}
+
+form h2 {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+	background-color: #BBDEF0;
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.btnContiner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+button {
+	background-color: #BBDEF0;
+	margin: 20px;
+	margin-bottom: 0;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#mClasses h1 {
+	padding: 1em;
+}
+
+#mClasses p {
+	margin: 1em;
+	padding-left: 2em;
+}
+	
+/* Style rules for footer content */
+footer {
+	background-color: #00A6A6;
+	margin: 0;
+}
+footer p{
+	font-size: 0.7em;
+	text-align: center;
+	color: #fff;
+	margin-bottom:0;
+	padding: .25em;
+}
+
+footer p a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print{
+	/* Tablet Viewport: show the tablet-desktop class, hide mobile class */
+	.tabDesk {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+		/* Tablet viewport: Style rules for header */
+	header {
+		padding-bottom: 1%;
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	nav li {
+		border-top: none;
+		display: inline-block;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+	
+	nav li a {
+		padding: 0.1em 0.75em;
+		font-size: 1.25em;
+	}
+	
+	#tdAbout {
+		max-width: 1320px;
+		margin: 1em auto;
+		padding: 1em;
+	}
+	
+	.container {
+		display: block;
+	}
+
+	
+	#amenities {
+		background-color: #F08700;
+		color: #000000;
+		padding: 2em;
+	}
+	
+	#amenities h2 {
+		Margin: 0 0 .5em 0;
+		padding: 0;
+	}
+	
+	dl {
+		padding: 1em;
+		font-size: 1.3em;
+	}
+	
+	dt {
+		font-family: "Inter", sans-serif;
+		font-weight: bold;
+	}
+	
+	/* Slideshow container */
+	.slideContainer {
+		position: relative;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	/* Hide the images by default */
+	.slides {
+		display: none;
+	}
+	
+	.slides img {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	
+	/* Next & previous buttons */
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	}
+	
+	/* Position the "next button" to the right */
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+	
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+	
+	.num {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
+	
+	#dotContainer {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		text-align: center;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+	}
+	
+	.active, .dot:hover {
+		background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+	
+	@keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	}
+	
+	.grid {
+		margin: 2em;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	
+	#memTeirs {
+		max-width: 1320px;
+		margin: 1em auto;
+	}
+	
+	#basic, #mid, #high {
+		display: flex;
+		flex-direction: column;
+		border-radius: 8px;
+		background-color: #fff;
+	}
+	
+	#basic p, #mid p, #high p {
+		padding: 2em;
+		background-color: #fff;
+		flex-grow: 1;
+	}
+	
+	h3 {
+		margin: 0;
+		padding: 1em;
+		border-radius: 8px 8px 0 0;
+	}
+	
+	#basic {
+		background-color: #EFCA08;
+	}
+	
+	#mid {
+		background-color: #F49F0A;
+	}
+	
+	#high {
+		background-color: #F08700;
+	}
+	
+	#memH2 {
+		color: #fff;
+	}
+	
+	.tdJoin {
+		min-width: 100px;
+		width: 10%;
+		max-width: 120px;
+		padding:.25%;
+		height: 54px;
+		margin: .25em auto 1em auto;
+		border-radius: 8px;
+		background-color: #fff;
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	.tdJoin:hover {
+		background-color: #F49F0A;
+		}
+	
+	.tdJoin a {
+		text-decoration: none;
+		color: #000000;
+	}
+	
+	.fwd1 {
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
+	
+	.map {
+		display: block;
+		width: 600px;
+		height:  450px;
+		padding: 1em; 
+		margin: 0 auto;
+	}
+	
+	#tdContact{
+		margin: 1em;
+		padding: 1em;
+		text-align: center;
+	}
+	
+	#tdContact a{
+		text-decoration: none;
+		color: #F08700;
+	}
+	
+	#hero {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	form {
+		width: 400px;
+	}
+	
+	#tdClasses h1 {
+	padding: 1em;
+}
+	
+	.calContainer {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 1em;
+	}
+
+	
+	#calTable {
+		background-color: #00A6A6;
+		font-size: 0.8em;
+		width: 99%;
+		margin: 1em auto;
+		padding: .5em;
+		height: auto;
+		border-radius: 0 0 10px 10px;
+		table-layout: auto; 
+		display: table;
+	}
+	
+	#calTable caption {
+		color: #fff;
+		background-color: #00A6A6;
+		caption-side: top;
+		text-align: center;
+		padding: 1em;
+		font-size: 1.6em;
+		letter-spacing: 0.3em;
+		border-radius: 10px 10px 0 0;
+		border-collapse: collapse;
+	}
+	
+	.weekdays {
+		background-color: #BBDEF0;
+		width: 14.28%;
+		font-size: 1em;
+		border-bottom: 3px solid black;
+	}
+	
+	.calDates {
+		background-color: #BBDEF0;
+		text-align: left;
+		vertical-align: top;
+		padding: 4px;
+		border: 1px solid black;
+		border-radius: 4px;
+		height: 60px;
+	}
+	
+	#calToday {
+		font-weight: bold;
+		background-color: #F49F0A;
+		border: 1.5px solid black;
+		border-radius: 4px;
+	}
+	
+	footer {
+		padding: .5%;
+	}
+	
+	footer p{
+		font-size: 1em;
+    }
+}
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	.container {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: stretch;
+	}
+	
+	.lHalf, .rHalf {
+		flex: 1;
+		display: flex;
+	}
+	
+	.lHalf {
+		background-color: #F08700;
+		display: flex;
+		align-items: stretch;
+		justify-content: flex-start;
+	}	
+	
+	#amenities {
+		background-color: #F08700;
+		color: #000000;
+		padding: 2em;
+		max-width: 450px;
+		margin: 1em auto;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	#amenities h2 {
+		Margin: 0 0 .5em 0;
+		padding: 0;
+	}
+	
+	dl {
+		padding: 1em;
+		font-size: 1.2em;
+	}
+	
+	dt {
+		font-family: "Inter", sans-serif;
+		font-weight: bold;
+	}
+	
+	.container {
+		display: flex;
+		align-items:  center;
+		gap: 20px;
+		flex-wrap: wrap;
+		width: 100vw;
+	}	
+	
+	#calTable {
+		width: 90%;
+		font-size: .9em;
+	}
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+	
+	#lvp {
+		width: 100%;
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+	
+	.fwd1, .fwd2, .container {
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+        left: auto;
+        right: auto;
+    }
+	
+	table {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
